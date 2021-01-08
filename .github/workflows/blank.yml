@@ -41,6 +41,6 @@ jobs:
         uses: rjstone/discord-webhook-notify@v1.0.4
         with:
           webhookUrl: "https://discord.com/api/webhooks/777735843531456542/dZJWSP-iI2jWfpnYelt6NWx2wmtCynL0D1S6PZD3bwUgSJzYLOBxeKQf3uSp88QH062s"
-          text: text
+          description: text
                  
 
