@@ -34,3 +34,15 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: Discord Commits
+        # You may pin to the exact commit or the version.
+        # uses: Sniddl/discord-commits@3aa65e042a750a2e343817cbf83b8c8a4c24e4c6
+        uses: Sniddl/discord-commits@v1.2
+        with:
+          # discord webhook url without /github
+          webhook: "https://discord.com/api/webhooks/777735843531456542/dZJWSP-iI2jWfpnYelt6NWx2wmtCynL0D1S6PZD3bwUgSJzYLOBxeKQf3uSp88QH062s"
+          # A general message that is displayed for all commits.
+          message: TestMessage
+          # JSON string that accepts double braces for templating.
+          embed: # optional
