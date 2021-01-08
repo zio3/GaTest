@@ -45,4 +45,4 @@ jobs:
           # A general message that is displayed for all commits.
           message: TestMessage
           # JSON string that accepts double braces for templating.
-          embed: '{{ commit.author.name }}'
+          embed: '{ "title": "{{ commit.title }}", "description": "{{ commit.description }}", "url": "{{ commit.url }}", "author": { "name": "{{ commit.author.name }} ({{ commit.author.username }})", "icon_url": "https://avatars.io/gravatar/{{ commit.author.email }}"} }'
